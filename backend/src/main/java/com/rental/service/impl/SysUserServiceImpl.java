@@ -46,7 +46,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
         }
 
         // 检查状态
-        if (user.getStatus() == 1) {
+        if (user.getStatus() == 0) {
             throw new BusinessException("账号已被禁用");
         }
 

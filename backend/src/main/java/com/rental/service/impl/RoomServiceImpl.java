@@ -319,6 +319,7 @@ public class RoomServiceImpl extends ServiceImpl<RoomMapper, Room> implements Ro
                 } else {
                     member = new FamilyMember();
                     member.setTenantId(tenantId);
+                    member.setStatus(1);
                 }
                 member.setName(memberDTO.getName());
                 member.setIdCard(memberDTO.getIdCard());
